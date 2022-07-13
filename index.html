@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/scripts.js"></script>
+    <title>Initiative Tracker ALPHA</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="red-border character-list" id="character-list">
+        character listing
+      </div>
+      <div class="blue-border control-board">
+        <div
+          class="green-border sorted-character-array"
+          id="sorted-character-array"
+        >
+          sorted chars go here
+        </div>
+        <p>actual controls and such</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="hp">HP:</label>
+        <input type="number" id="hp" name="hp" /><br /><br />
+        <label for="score">Score:</label>
+        <input type="number" id="score" name="score" /><br /><br />
+        <button type="button" onclick="addCharacter()">Submit!</button>
+        <button type="button" onclick="sortCharacters()">Sort!</button>
+      </div>
+    </div>
+  </body>
+</html>
